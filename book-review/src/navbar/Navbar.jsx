@@ -8,7 +8,7 @@ const navlist = [
 
 function Navbar() {
   return (
-    <nav className="bg-white shadow-md py-6 px-6 flex items-center justify-between w-full">
+    <nav className="bg-white  py-6 px-6 flex items-center justify-between w-full">
       {/* Logo/Brand Name */}
       <div className="flex items-center">
         <span className="text-2xl font-bold">Book Review</span>
@@ -21,7 +21,7 @@ function Navbar() {
             key={item.path}
             className={({ isActive, isPending }) =>
               isActive
-                ? "border-2 py-1 px-3 rounded-md font-bold text-blue-500 border-blue-500"
+                ? "border-2 py-1 px-4 rounded-md font-bold text-blue-500 border-blue-500"
                 : isPending
                 ? "pending"
                 : "border-2 border-white py-1 px-4"

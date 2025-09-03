@@ -7,6 +7,7 @@ import App from "./App.jsx";
 import ListedBook from "./Main/listedbook/ListedBook.jsx";
 import PagesToRead from "./Main/page-to-read/PagesToRead.jsx";
 import Home from "./Main/home/Home.jsx";
+import BookReview from "./Main/bookReview/BookReview.jsx";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         Component: Home,
+        loader: async () => {
+          const response = await fetch("/datas/booksdata.json");
+          const data = await response.json();
+          return data;
+        },
       },
       {
         path: "/listed",
@@ -24,6 +30,15 @@ const router = createBrowserRouter([
       {
         path: "/pages-to-read",
         Component: PagesToRead,
+      },
+      {
+        path: "/book-review/:bookPath",
+        Component: BookReview,
+        loader: async ({ params }) => {
+          const response = await fetch(`/datas/booksdata.json`);
+          const data = await response.json();
+          return data.find((book) => book.bookName === params.bookPath);
+        },
       },
     ],
   },
