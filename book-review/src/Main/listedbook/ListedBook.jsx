@@ -11,15 +11,29 @@ function ListedBook() {
   const [localBookData, setLocalBookData] = useState("readBooks");
 
   const getBooksId = JSON.parse(localStorage.getItem(localBookData)) || [];
-  const getBooklist = booksdata.filter((book) =>
+
+  const shortBy = (book, option) => {
+    if (option === "Rating") {
+      return [...book].sort((a, b) => b.rating - a.rating);
+    } else if (option === "Number of Pages") {
+      return [...book].sort((a, b) => b.totalPages - a.totalPages);
+    } else if (option === "Publish Year") {
+      return [...book].sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+    }
+    return book;
+  };
+
+  const getBooklistRow = booksdata.filter((book) =>
     getBooksId.includes(book.bookId)
   );
+
+  const getBooklist = shortBy(getBooklistRow, selectedSortOption);
 
   const handleDropdownToggle = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  const handleSortOptionChange = (option, bookList) => {
+  const handleSortOptionChange = (option) => {
     setSelectedSortOption(option);
     setIsDropdownOpen(false);
   };
@@ -50,7 +64,7 @@ function ListedBook() {
             <div className=" flex flex-col h-full w-full">
               {sortBy.map((option) => (
                 <button
-                  onClick={() => handleSortOptionChange(option, getBooklist)}
+                  onClick={() => handleSortOptionChange(option)}
                   key={option}
                   className="px-4 py-2 h-full hover:bg-blue-500 hover:text-white"
                 >
