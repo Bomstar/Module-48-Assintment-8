@@ -26,6 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/listed",
         Component: ListedBook,
+        loader: async () => {
+          const response = await fetch("/datas/booksdata.json");
+          const data = await response.json();
+          return data;
+        },
       },
       {
         path: "/pages-to-read",

@@ -8,7 +8,7 @@
     "totalPages": 400,
     "rating": 4.0,
     "category": "Fantasy / Magical Realism",
-    "tags": ["Fantasy", "Magic Realism", "Romance", "Atmospheric"],
+    "tags": ["Fantasy", "Magic Realism", "Romance"],
     "publisher": "Vintage / Anchor (US editions vary)",
     "yearOfPublishing": 2011
   },
@@ -21,7 +21,7 @@
     "totalPages": 771,
     "rating": 3.9,
     "category": "Literary Fiction",
-    "tags": ["Bildungsroman", "Art", "Family", "Loss"],
+    "tags": ["Bildungsroman", "Art", "Family"],
     "publisher": "Little, Brown and Company",
     "yearOfPublishing": 2013
   },
@@ -34,7 +34,7 @@
     "totalPages": 266,
     "rating": 3.8,
     "category": "Contemporary / Literary Fiction",
-    "tags": ["Contemporary", "Romance", "Character-driven", "Ireland"],
+    "tags": ["Contemporary", "Romance", "Ireland"],
     "publisher": "Faber & Faber",
     "yearOfPublishing": 2018
   },
@@ -47,7 +47,7 @@
     "totalPages": 432,
     "rating": 4.0,
     "category": "Dystopian / Literary Fiction",
-    "tags": ["Dystopia", "Political", "Feminism", "Speculative"],
+    "tags": ["Dystopia", "Political", "Feminism"],
     "publisher": "McClelland & Stewart / Nan A. Talese (US)",
     "yearOfPublishing": 2019
   },
@@ -60,7 +60,7 @@
     "totalPages": 320,
     "rating": 3.8,
     "category": "Speculative / Literary Fiction",
-    "tags": ["Speculative", "AI", "Ethics", "Philosophical"],
+    "tags": ["Speculative", "Ethics", "Philosophical"],
     "publisher": "Faber & Faber / Knopf (US)",
     "yearOfPublishing": 2021
   },
@@ -73,7 +73,7 @@
     "totalPages": 384,
     "rating": 4.1,
     "category": "Contemporary / Mystery",
-    "tags": ["Nature", "Mystery", "Coming-of-age", "Southern"],
+    "tags": ["Nature", "Mystery", "Southern"],
     "publisher": "G.P. Putnam's Sons",
     "yearOfPublishing": 2018
   },
@@ -86,7 +86,7 @@
     "totalPages": 352,
     "rating": 4.5,
     "category": "Memoir",
-    "tags": ["Memoir", "Education", "Family", "Resilience"],
+    "tags": ["Memoir", "Education", "Family"],
     "publisher": "Random House",
     "yearOfPublishing": 2018
   },
@@ -99,7 +99,7 @@
     "totalPages": 325,
     "rating": 4.0,
     "category": "Psychological Thriller",
-    "tags": ["Thriller", "Mystery", "Psychological", "Twist"],
+    "tags": ["Thriller", "Mystery", "Psychological"],
     "publisher": "Celadon Books",
     "yearOfPublishing": 2019
   },
@@ -112,7 +112,7 @@
     "totalPages": 304,
     "rating": 4.1,
     "category": "Contemporary / Speculative",
-    "tags": ["Speculative", "Mental Health", "Philosophical", "Parable"],
+    "tags": ["Mental Health", "Philosophical", "Parable"],
     "publisher": "Canongate / Viking (US)",
     "yearOfPublishing": 2020
   },
@@ -125,7 +125,7 @@
     "totalPages": 352,
     "rating": 4.4,
     "category": "Myth Retelling / Historical Fiction",
-    "tags": ["Myth", "Romance", "Historical", "Retelling"],
+    "tags": ["Myth", "Romance", "Historical"],
     "publisher": "Bloomsbury / Ecco (US)",
     "yearOfPublishing": 2011
   },
@@ -138,7 +138,7 @@
     "totalPages": 512,
     "rating": 4.1,
     "category": "Literary Fiction / Eco-fiction",
-    "tags": ["Environment", "Interconnectedness", "Activism", "Multi-voice"],
+    "tags": ["Environment", "Interconnectedness", "Activism"],
     "publisher": "W. W. Norton & Company",
     "yearOfPublishing": 2018
   },
@@ -151,7 +151,7 @@
     "totalPages": 320,
     "rating": 4.2,
     "category": "Historical / Speculative",
-    "tags": ["Historical", "Race", "Speculative", "Freedom"],
+    "tags": ["Historical", "Race", "Freedom"],
     "publisher": "Doubleday",
     "yearOfPublishing": 2016
   }
