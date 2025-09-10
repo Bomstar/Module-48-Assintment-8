@@ -14,11 +14,11 @@ function ListedBook() {
 
   const shortBy = (book, option) => {
     if (option === "Rating") {
-      return [...book].sort((a, b) => b.rating - a.rating);
+      return book.sort((a, b) => b.rating - a.rating);
     } else if (option === "Number of Pages") {
-      return [...book].sort((a, b) => b.totalPages - a.totalPages);
+      return book.sort((a, b) => b.totalPages - a.totalPages);
     } else if (option === "Publish Year") {
-      return [...book].sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
+      return book.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing);
     }
     return book;
   };
@@ -41,6 +41,7 @@ function ListedBook() {
   const handleBookListUpdate = (listType) => {
     setLocalBookData(listType);
     setIsReadBooks(listType === "readBooks");
+    setSelectedSortOption("Sort by");
   };
 
   return (

@@ -35,6 +35,11 @@ const router = createBrowserRouter([
       {
         path: "/pages-to-read",
         Component: PagesToRead,
+        loader: async () => {
+          const response = await fetch("/datas/booksdata.json");
+          const data = await response.json();
+          return data;
+        },
       },
       {
         path: "/book-review/:bookPath",
